@@ -133,7 +133,7 @@ public class DisplayNewsActivity extends AppCompatActivity implements LoaderMana
     public Loader<List<NewsArticle>> onCreateLoader(int i, Bundle bundle) {
         // If no query was entered, just get the latest news,
         // otherwise append the query to the base URL
-        if(TextUtils.isEmpty(query)) {
+        if (TextUtils.isEmpty(query)) {
             // Create and return a NewsLoader to the Loader with the base URL
             return new NewsLoader(this, GUARDIAN_REQUEST_URL);
         } else {
